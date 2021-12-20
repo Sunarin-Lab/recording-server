@@ -1,0 +1,15 @@
+#+OPTIONS: toc:nil
+
+* Requirement
+
+- ffmpeg
+- google chrome
+
+** Configuration
+Change google chrome executable path in =/src/lib/Recorder.ts=.
+
+** Running server
+
+#+begin_src sh
+npm run dev  
+#+end_src
