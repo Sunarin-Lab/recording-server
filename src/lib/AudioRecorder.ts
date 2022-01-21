@@ -61,8 +61,6 @@ export class AudioRecorder extends EventEmitter {
                         var stream: MediaStream = newAudio.captureStream();
                         stream.onaddtrack = function(e) {
                             if (e.track.kind === "audio") {
-                                console.log(stream);
-                                console.log(stream.getAudioTracks());
 
                                 var sourceNode = window.audioContext.createMediaStreamSource(stream);
                                 sourceNode.connect(window.gainNode);
@@ -139,11 +137,11 @@ export class AudioRecorder extends EventEmitter {
             if (audioElements != null) {
                 audioElements.forEach((element: any) => {
                     var stream: MediaStream = element.captureStream();
-
                     var sourceNode = window.audioContext.createMediaStreamSource(stream);
                     sourceNode.connect(window.gainNode);
 
                     audioSources.push(sourceNode);
+
                 });
 
                 audioSources.forEach((source) => {

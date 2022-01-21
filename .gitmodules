@@ -1,0 +1,3 @@
+[submodule "AutoSub"]
+	path = AutoSub
+	url = https://github.com/abhirooptalasila/AutoSub.git
