@@ -12,13 +12,6 @@ const app = express();
 const port = 8080;
 const recorders: Map<string, Recorder> = new Map<string, Recorder>();
 const upload = multer({ dest: '../uploads', storage: multer.memoryStorage() });
-// const mysql_con = createConnection({
-//     host: "localhost",
-//     user: "bima",
-//     password: "admin123",
-//     database: "meeting_rpl"
-// });
-
 
 class User {
     id: any = "";
